@@ -13,25 +13,25 @@
                         <nav class="tmp-mainmenu-nav d-none d-xl-block">
                             <ul class="tmp-mainmenu">
                                 <li>
-                                    <a href="#">Home
+                                    <a href="{{ route('home') }}">Home
                                     </a>
                                     
                                 </li>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="{{ route('about') }}">About</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">Services</a>
+                                    <a href="{{ route('services') }}">Services</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Blog</a>
+                                    <a href="{{ route('blogs') }}">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="#">Project</a>
+                                    <a href="{{ route('projects') }}">Project</a>
                                 </li>
                                 
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="{{ route('contact') }}">Contact</a>
                                 </li>
                             </ul>
 
@@ -151,23 +151,23 @@
                 </div>
                 <ul class="tmp-mainmenu">
                     <li>
-                        <a href="#">Home
+                        <a href="{{ route('home') }}">Home
                         </a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="{{ route('about') }}">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="{{ route('services') }}">Services</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="{{ route('blogs') }}">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <a href="{{ route('projects') }}">Projects</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="{{ route('contact') }}">Contact</a>
                     </li>
                 </ul>
 
