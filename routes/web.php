@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\PagesController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
@@ -11,6 +12,9 @@ Route::get('/services', [PagesController::class, 'services'])->name('services');
 Route::get('/blogs', [PagesController::class, 'blogs'])->name('blogs');
 Route::get('/projects', [PagesController::class, 'projects'])->name('projects');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+
+
+Route::get('/dash', [DashboardController::class, 'dash'])->name('dash');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
