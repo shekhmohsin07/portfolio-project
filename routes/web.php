@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\PagesController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ServiceCategoryController;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
@@ -14,16 +15,22 @@ Route::get('/projects', [PagesController::class, 'projects'])->name('projects');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 
 
-Route::get('/dash', [DashboardController::class, 'dash'])->name('dash');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function () {
+    
+    // Dashboard
+    Route::get('/dashboard', function () {
+        return view('backend.pages.dashboard'); 
+    })->name('dashboard');
 
-Route::middleware('auth')->group(function () {
+    // Profile Management
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    //service category route
+    Route::resource('service-categories', ServiceCategoryController::class);
 });
+
 
 require __DIR__.'/auth.php';

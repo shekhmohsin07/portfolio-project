@@ -27,12 +27,7 @@
                     </li>
                     <li class="xn-title">Navigation</li>
                     <li class="xn-openable active">
-                        <a href="#"><span class="fa fa-dashboard"></span> <span class="xn-text">Dashboards</span></a>
-                        <ul>
-                            <li class="active"><a href="index.html"><span class="xn-text">Dashboard 1</span></a></li>
-                            <li><a href="dashboard.html"><span class="xn-text">Dashboard 2</span></a></li>
-                            <li><a href="dashboard-dark.html"><span class="xn-text">Dashboard 3</span></a></li>
-                        </ul>
+                        <a href="{{ route('dashboard') }}"><span class="fa fa-dashboard"></span> <span class="xn-text">Dashboard</span></a>
                     </li>                    
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Pages</span></a>
@@ -126,26 +121,15 @@
                     </li>
                     <li class="xn-title">Components</li>
                     <li class="xn-openable">
-                        <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">UI Kits</span></a>                        
+                        <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Service</span></a>                        
                         <ul>
-                            <li><a href="ui-widgets.html"><span class="fa fa-heart"></span> Widgets</a></li>                            
-                            <li><a href="ui-elements.html"><span class="fa fa-cogs"></span> Elements</a></li>
-                            <li><a href="ui-buttons.html"><span class="fa fa-square-o"></span> Buttons</a></li>                            
-                            <li><a href="ui-panels.html"><span class="fa fa-pencil-square-o"></span> Panels</a></li>
-                            <li><a href="ui-icons.html"><span class="fa fa-magic"></span> Icons</a><div class="informer informer-warning">+679</div></li>
-                            <li><a href="ui-typography.html"><span class="fa fa-pencil"></span> Typography</a></li>
-                            <li><a href="ui-portlet.html"><span class="fa fa-th"></span> Portlet</a></li>
-                            <li><a href="ui-sliders.html"><span class="fa fa-arrows-h"></span> Sliders</a></li>
-                            <li><a href="ui-alerts-popups.html"><span class="fa fa-warning"></span> Alerts & Popups</a></li>                            
-                            <li><a href="ui-lists.html"><span class="fa fa-list-ul"></span> Lists</a></li>
-                            <li><a href="ui-tour.html"><span class="fa fa-random"></span> Tour</a></li>
-                            <li><a href="ui-nestable.html"><span class="fa fa-sitemap"></span> Nestable List</a></li>
-                            <li><a href="ui-autocomplete.html"><span class="fa fa-search-plus"></span> Autocomplete</a></li>
-                            <li><a href="ui-slide-menu.html"><span class="fa fa-angle-right"></span> Slide Menu</a></li>
+                            <li><a href="#"><span class="fa fa-list-ul"></span> Services</a></li>
+                            <li><a href="#"><span class="fa fa-magic"></span> Add New</a></li>
+                            <li><a href="{{ route('service-categories.index') }}"><span class="fa fa-align-justify"></span>Categories</a></li>
                         </ul>
                     </li>                    
                     <li class="xn-openable">
-                        <a href="#"><span class="fa fa-pencil"></span> <span class="xn-text">Forms</span></a>
+                        <a href="#"><span class="fa fa-pencil"></span> <span class="xn-text">Projects</span></a>
                         <ul>
                             <li class="xn-openable">
                                 <a href="form-layouts-two-column.html"><span class="fa fa-tasks"></span> Form Layouts</a>                                
@@ -164,7 +148,7 @@
                         </ul>
                     </li>
                     <li class="xn-openable">
-                        <a href="tables.html"><span class="fa fa-table"></span> <span class="xn-text">Tables</span></a>
+                        <a href="tables.html"><span class="fa fa-table"></span> <span class="xn-text">Posts</span></a>
                         <ul>                            
                             <li><a href="table-basic.html"><span class="fa fa-align-justify"></span> Basic</a></li>
                             <li><a href="table-datatables.html"><span class="fa fa-sort-alpha-desc"></span> Data Tables</a></li>
@@ -183,27 +167,7 @@
                     <li>
                         <a href="maps.html"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
                     </li>                    
-                    <li class="xn-openable">
-                        <a href="#"><span class="fa fa-sitemap"></span> <span class="xn-text">Navigation Levels</span></a>
-                        <ul>                            
-                            <li class="xn-openable">
-                                <a href="#">Second Level</a>
-                                <ul>
-                                    <li class="xn-openable">
-                                        <a href="#">Third Level</a>
-                                        <ul>
-                                            <li class="xn-openable">
-                                                <a href="#">Fourth Level</a>
-                                                <ul>
-                                                    <li><a href="#">Fifth Level</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>                            
-                        </ul>
-                    </li>
+                    
                     
                 </ul>
                 <!-- END X-NAVIGATION -->
