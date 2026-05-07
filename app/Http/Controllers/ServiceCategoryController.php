@@ -5,95 +5,85 @@ namespace App\Http\Controllers;
 use App\Models\ServiceCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
 
 class ServiceCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index(): View
     {
-        $categories = ServiceCategory::latest()->get();
+        $categories = ServiceCategory::latest()->paginate(10);
 
-        if ($request->wantsJson()) {
-            return response()->json([
-                'success' => true,
-                'data' => $categories
-            ]);
-        }
-
-        // Default to Blade view for web browsers
-        return view('backend.pages.services.categories.index', [
-            'categories' => $categories
-        ]);
+        return view('backend.pages.services.categories.index', compact('categories'));
     }
 
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create(): View
+    {
+        return view('backend.pages.services.categories.create');
+    }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
-        $request->validate([
-            'name' => 'required|unique:service_categories,name'
+        $validated = $request->validate([
+            'name' => 'required|string|max:255|unique:service_categories,name',
+            'description' => 'nullable|string'
         ]);
 
-        $category = ServiceCategory::create([
-            'name' => $request->name,
-            'slug' => Str::slug($request->name),
-            'description' => $request->description,
+        ServiceCategory::create([
+            'name' => $validated['name'],
+            'slug' => Str::slug($validated['name']),
+            'description' => $validated['description'],
         ]);
 
-        return response()->json([
-            'success' => true,
-            'message' => 'Category created successfully',
-            'data' => $category
-        ]);
+        return redirect()->route('service-categories.index')
+            ->with('success', 'Service Category created successfully!');
     }
 
     /**
-     * Display the specified resource.
+     * Show the form for editing the specified resource.
      */
-    public function show(ServiceCategory $serviceCategory)
+    public function edit(ServiceCategory $serviceCategory): View
     {
-         return response()->json([
-            'success' => true,
-            'data' => $serviceCategory
-        ]);
+        return view('backend.pages.services.categories.edit', compact('serviceCategory'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, ServiceCategory $serviceCategory)
+    public function update(Request $request, ServiceCategory $serviceCategory): RedirectResponse
     {
-        $request->validate([
-            'name' => 'required|unique:service_categories,name,' . $serviceCategory->id
+        $validated = $request->validate([
+            'name' => 'required|string|max:255|unique:service_categories,name,' . $serviceCategory->id,
+            'description' => 'nullable|string'
         ]);
 
         $serviceCategory->update([
-            'name' => $request->name,
-            'slug' => Str::slug($request->name),
-            'description' => $request->description,
+            'name' => $validated['name'],
+            'slug' => Str::slug($validated['name']),
+            'description' => $validated['description'],
         ]);
 
-        return response()->json([
-            'success' => true,
-            'message' => 'Category updated successfully',
-            'data' => $serviceCategory
-        ]);
+        return redirect()->route('service-categories.index')
+            ->with('success', 'Category updated successfully!');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ServiceCategory $serviceCategory)
+    public function destroy(ServiceCategory $serviceCategory): RedirectResponse
     {
         $serviceCategory->delete();
 
-        return response()->json([
-            'success' => true,
-            'message' => 'Category deleted successfully'
-        ]);
+        return redirect()->route('service-categories.index')
+            ->with('error', 'Category has been moved to trash.');
     }
 }
