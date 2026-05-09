@@ -6,6 +6,7 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\PagesController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ServiceCategoryController;
+use App\Http\Controllers\ServiceController;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
@@ -30,6 +31,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     //service category route
     Route::resource('service-categories', ServiceCategoryController::class);
+    Route::resource('services', ServiceController::class);
 });
 
 
