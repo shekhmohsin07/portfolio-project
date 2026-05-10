@@ -123,8 +123,8 @@
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Service</span></a>                        
                         <ul>
-                            <li><a href="#"><span class="fa fa-list-ul"></span> Services</a></li>
-                            <li><a href="#"><span class="fa fa-magic"></span> Add New</a></li>
+                            <li><a href="{{ route('services.index') }}"><span class="fa fa-list-ul"></span> Services</a></li>
+                            <li><a href="{{ route('services.create') }}"><span class="fa fa-magic"></span> Add New</a></li>
                             <li><a href="{{ route('service-categories.index') }}"><span class="fa fa-align-justify"></span>Categories</a></li>
                         </ul>
                     </li>                    

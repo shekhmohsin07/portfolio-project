@@ -36,16 +36,22 @@ class MediaController extends Controller
 
         $image = $request->file('image');
 
-        $imageName = time() . '.' . $image->getClientOriginalExtension();
+        $imageName = time() . '_' . rand(1111,9999) . '.' . $image->getClientOriginalExtension();
 
         $image->move(public_path('uploads/media'), $imageName);
 
-        Media::create([
+        $media = Media::create([
             'file' => $imageName,
             'type' => $image->getClientMimeType(),
         ]);
 
-        return back()->with('success', 'Image uploaded.');
+        return response()->json([
+            'success' => true,
+            'media' => $media,
+            'url' => asset('uploads/media/' . $imageName)
+        ]);
+
+        
     }
 
     /**
@@ -75,8 +81,16 @@ class MediaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Media $media)
+    public function destroy(Media $medium)
     {
-        //
+        if ($medium->file && file_exists(public_path('uploads/media/' . $medium->file))) {
+            unlink(public_path('uploads/media/' . $medium->file));
+        }
+
+        $medium->delete();
+
+        return response()->json([
+            'success' => true
+        ]);
     }
 }

@@ -11,7 +11,7 @@ use App\Http\Controllers\ServiceController;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
-Route::get('/services', [PagesController::class, 'services'])->name('services');
+Route::get('/my-services', [PagesController::class, 'services'])->name('my-services');
 Route::get('/blogs', [PagesController::class, 'blogs'])->name('blogs');
 Route::get('/projects', [PagesController::class, 'projects'])->name('projects');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');

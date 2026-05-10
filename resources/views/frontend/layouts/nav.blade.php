@@ -21,7 +21,7 @@
                                     <a href="{{ route('about') }}">About</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('services') }}">Services</a>
+                                    <a href="{{ route('my-services') }}">Services</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('blogs') }}">Blog</a>
@@ -158,7 +158,7 @@
                         <a href="{{ route('about') }}">About</a>
                     </li>
                     <li>
-                        <a href="{{ route('services') }}">Services</a>
+                        <a href="{{ route('my-services') }}">Services</a>
                     </li>
                     <li>
                         <a href="{{ route('blogs') }}">Blog</a>
