@@ -10,7 +10,7 @@
         <div class="row">
 
                 <!-- Search -->
-                <div class="col-md-9 mb-3 mb-md-0">
+                <div class="col-md-10 mb-3 mb-md-0">
                     <h2 class="fw-bold mb-1 text-dark">
                         Service Categories
                     </h2>
@@ -22,7 +22,7 @@
                 </div>
 
                 <!-- Add Button -->
-                <div class="col-md-3 text-md-end">
+                <div class="col-md-2 text-md-end">
 
                     <a href="{{ route('service-categories.create') }}"
                        class="btn btn-primary rounded-4 px-4 py-2 fw-semibold shadow-sm">
@@ -34,7 +34,7 @@
 
                 </div>
 
-            </div>
+        </div>
 
         
 

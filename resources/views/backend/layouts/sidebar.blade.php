@@ -9,27 +9,27 @@
                     </li>
                     <li class="xn-profile">
                         <a href="#" class="profile-mini">
-                            <img src="assets/images/users/avatar.jpg" alt="Shekh Mohsin"/>
+                            <img src="{{ asset('backend-assets/img/users/avatar.png') }}" alt="Shekh Mohsin"/>
                         </a>
                         <div class="profile">
                             <div class="profile-image">
-                                <img src="assets/images/users/avatar.jpg" alt="JShekh Mohsin"/>
+                                <img src="{{ asset('backend-assets/img/users/avatar.png') }}" alt="Shekh Mohsin"/>
                             </div>
                             <div class="profile-data">
                                 <div class="profile-data-name">Shekh Mohsin</div>
                                 <div class="profile-data-title">Web Developer/Designer</div>
                             </div>
                             <div class="profile-controls">
-                                <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
+                                <a href="{{ route('profile.edit') }}" class="profile-control-left"><span class="fa fa-info"></span></a>
                                 <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
                             </div>
                         </div>                                                                        
                     </li>
                     <li class="xn-title">Navigation</li>
-                    <li class="xn-openable active">
+                    <li class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
                         <a href="{{ route('dashboard') }}"><span class="fa fa-dashboard"></span> <span class="xn-text">Dashboard</span></a>
                     </li>                    
-                    <li class="xn-openable">
+                    {{-- <li class="xn-openable">
                         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Pages</span></a>
                         <ul>
                             <li><a href="pages-gallery.html"><span class="fa fa-image"></span> Gallery</a></li>
@@ -118,41 +118,48 @@
                             <li><a href="layout-adaptive-panels.html">Adaptive Panels</a></li>                            
                             <li><a href="blank.html">Blank Page</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="xn-title">Components</li>
-                    <li class="xn-openable">
-                        <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Service</span></a>                        
+                    <li class="xn-openable {{ request()->routeIs('services.*') ? 'active' : '' }}">
+                        <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Services</span></a>                        
                         <ul>
-                            <li><a href="{{ route('services.index') }}"><span class="fa fa-list-ul"></span> Services</a></li>
-                            <li><a href="{{ route('services.create') }}"><span class="fa fa-magic"></span> Add New</a></li>
-                            <li><a href="{{ route('service-categories.index') }}"><span class="fa fa-align-justify"></span>Categories</a></li>
+                            <li class="{{ request()->routeIs('services.index') ? 'active' : '' }}">
+                                <a href="{{ route('services.index') }}"><span class="fa fa-list-ul"></span>All Services</a>
+                            </li>
+                            <li class="{{ request()->routeIs('services.create') ? 'active' : '' }}">
+                                <a href="{{ route('services.create') }}"><span class="fa fa-magic"></span> Add New</a>
+                            </li>
+                            <li class="{{ request()->routeIs('service-categories.*') ? 'active' : '' }}">
+                                <a href="{{ route('service-categories.index') }}"><span class="fa fa-align-justify"></span>Categories</a>
+                            </li>
                         </ul>
                     </li>                    
-                    <li class="xn-openable">
+                    <li class="xn-openable {{ request()->routeIs('projects.*') || request()->routeIs('project-categories.*') ? 'active' : '' }}">
                         <a href="#"><span class="fa fa-pencil"></span> <span class="xn-text">Projects</span></a>
                         <ul>
-                            <li class="xn-openable">
-                                <a href="form-layouts-two-column.html"><span class="fa fa-tasks"></span> Form Layouts</a>                                
-                                <ul>
-                                    <li><a href="form-layouts-one-column.html"><span class="fa fa-align-justify"></span> One Column</a></li>
-                                    <li><a href="form-layouts-two-column.html"><span class="fa fa-th-large"></span> Two Column</a></li>
-                                    <li><a href="form-layouts-tabbed.html"><span class="fa fa-table"></span> Tabbed</a></li>
-                                    <li><a href="form-layouts-separated.html"><span class="fa fa-th-list"></span> Separated Rows</a></li>
-                                </ul> 
+                            <li class="{{ request()->routeIs('projects.index') ? 'active' : '' }}">
+                                <a href="{{ route('projects.index') }}"><span class="fa fa-list-ul"></span>All Projects</a>
                             </li>
-                            <li><a href="form-elements.html"><span class="fa fa-file-text-o"></span> Elements</a></li>
-                            <li><a href="form-validation.html"><span class="fa fa-list-alt"></span> Validation</a></li>
-                            <li><a href="form-wizards.html"><span class="fa fa-arrow-right"></span> Wizards</a></li>
-                            <li><a href="form-editors.html"><span class="fa fa-text-width"></span> WYSIWYG Editors</a></li>
-                            <li><a href="form-file-handling.html"><span class="fa fa-floppy-o"></span> File Handling</a></li>
+                            <li class="{{ request()->routeIs('projects.index') ? 'active' : '' }}">
+                                <a href="{{ route('projects.create') }}"><span class="fa fa-magic"></span> Add New</a>
+                            </li>
+                            <li class="{{ request()->routeIs('project-categories.*') ? 'active' : '' }}">
+                                <a href="{{ route('project-categories.index') }}"><span class="fa fa-align-justify"></span>Categories</a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="xn-openable">
-                        <a href="tables.html"><span class="fa fa-table"></span> <span class="xn-text">Posts</span></a>
-                        <ul>                            
-                            <li><a href="table-basic.html"><span class="fa fa-align-justify"></span> Basic</a></li>
-                            <li><a href="table-datatables.html"><span class="fa fa-sort-alpha-desc"></span> Data Tables</a></li>
-                            <li><a href="table-export.html"><span class="fa fa-download"></span> Export Tables</a></li>                            
+                    <li class="xn-openable {{ request()->routeIs('blogs.*') || request()->routeIs('blog-categories.*') ? 'active' : '' }}">
+                        <a href="#"><span class="fa fa-table"></span> <span class="xn-text">Posts</span></a>
+                        <ul>
+                            <li class="{{ request()->routeIs('blogs.index') ? 'active' : '' }}">
+                                <a href="{{ route('blogs.index') }}"><span class="fa fa-list-ul"></span>All Posts</a>
+                            </li>
+                            <li class="{{ request()->routeIs('blogs.create') ? 'active' : '' }}">
+                                <a href="{{ route('blogs.create') }}"><span class="fa fa-magic"></span> Add New</a>
+                            </li>
+                            <li class="{{ request()->routeIs('blog-categories.*') ? 'active' : '' }}">
+                                <a href="{{ route('blog-categories.index') }}"><span class="fa fa-align-justify"></span>Categories</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="xn-openable">

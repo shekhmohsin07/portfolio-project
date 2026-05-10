@@ -13,25 +13,35 @@
                         <nav class="tmp-mainmenu-nav d-none d-xl-block">
                             <ul class="tmp-mainmenu">
                                 <li>
-                                    <a href="{{ route('home') }}">Home
+                                    <a class="{{ request()->routeIs('home') ? 'active' : '' }}"
+                                        href="{{ route('home') }}">Home
                                     </a>
-                                    
                                 </li>
                                 <li>
-                                    <a href="{{ route('about') }}">About</a>
+                                    <a  class="{{ request()->routeIs('about') ? 'active' : '' }}"
+                                        href="{{ route('about') }}">About
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('my-services') }}">Services</a>
+                                    <a class="{{ request()->routeIs('services') ? 'active' : '' }}"
+                                        href="{{ route('services') }}">Services
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('blogs') }}">Blog</a>
+                                    <a class="{{ request()->routeIs('blogs') ? 'active' : '' }}"
+                                        href="{{ route('blogs') }}">Blog
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('projects') }}">Project</a>
+                                    <a class="{{ request()->routeIs('projects') ? 'active' : '' }}"
+                                        href="{{ route('projects') }}">Project
+                                    </a>
                                 </li>
                                 
                                 <li>
-                                    <a href="{{ route('contact') }}">Contact</a>
+                                    <a class="{{ request()->routeIs('contact') ? 'active' : '' }}"
+                                        href="{{ route('contact') }}">Contact
+                                    </a>
                                 </li>
                             </ul>
 
@@ -151,23 +161,29 @@
                 </div>
                 <ul class="tmp-mainmenu">
                     <li>
-                        <a href="{{ route('home') }}">Home
+                        <a class="{{ request()->routeIs('home') ? 'active' : '' }}"
+                            href="{{ route('home') }}">Home
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('about') }}">About</a>
+                        <a class="{{ request()->routeIs('about') ? 'active' : '' }}"
+                            href="{{ route('about') }}">About</a>
                     </li>
                     <li>
-                        <a href="{{ route('my-services') }}">Services</a>
+                        <a class="{{ request()->routeIs('services') ? 'active' : '' }}"
+                            href="{{ route('services') }}">Services</a>
                     </li>
                     <li>
-                        <a href="{{ route('blogs') }}">Blog</a>
+                        <a class="{{ request()->routeIs('blogs') ? 'active' : '' }}"
+                            href="{{ route('blogs') }}">Blog</a>
                     </li>
                     <li>
-                        <a href="{{ route('projects') }}">Projects</a>
+                        <a class="{{ request()->routeIs('projects') ? 'active' : '' }}"
+                            href="{{ route('projects') }}">Projects</a>
                     </li>
                     <li>
-                        <a href="{{ route('contact') }}">Contact</a>
+                        <a class="{{ request()->routeIs('contact') ? 'active' : '' }}"
+                            href="{{ route('contact') }}">Contact</a>
                     </li>
                 </ul>
 

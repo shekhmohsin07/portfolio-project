@@ -19,7 +19,7 @@ use App\Http\Controllers\ProjectCategoryController;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
-Route::get('/my-services', [PagesController::class, 'services'])->name('my-services');
+Route::get('/services', [PagesController::class, 'services'])->name('services');
 Route::get('/blogs', [PagesController::class, 'blogs'])->name('blogs');
 Route::get('/projects', [PagesController::class, 'projects'])->name('projects');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
@@ -38,28 +38,33 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    // Media route
-    Route::resource('media', MediaController::class);
 
-    //service route
-    Route::resource('service-categories', ServiceCategoryController::class);
-    Route::resource('services', ServiceController::class);
-
-    // Blogs Route
-    Route::resource('blog-categories', BlogCategoryController::class);
-    Route::resource('blogs', BlogController::class);
     Route::prefix('admin')->group(function () {
+
+        // Media route
+        Route::resource('media', MediaController::class);
+
+        //service route
+        Route::resource('service-categories', ServiceCategoryController::class);
+        Route::resource('services', ServiceController::class);
+
+        // Blogs Route
+        Route::resource('blog-categories', BlogCategoryController::class);
+        Route::resource('blogs', BlogController::class);
+
         Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
         Route::put('/comments/{comment}/approve', [CommentController::class, 'approve'])->name('comments.approve');
         Route::put('/comments/{comment}/reject', [CommentController::class, 'reject'])->name('comments.reject');
         Route::put('/comments/{comment}/pending', [CommentController::class, 'pending'])->name('comments.pending');
         Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+
+        // Project Routes
+        Route::resource('project-categories', ProjectCategoryController::class);
+        Route::resource('projects', ProjectController::class);
     });
 
 
-    // Project Routes
-    Route::resource('project-categories', ProjectCategoryController::class);
-    Route::resource('projects', ProjectController::class);
+    
 
 });
 
