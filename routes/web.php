@@ -8,6 +8,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\ServiceCategoryController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\BlogCategoryController;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
@@ -36,6 +37,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     //service route
     Route::resource('service-categories', ServiceCategoryController::class);
     Route::resource('services', ServiceController::class);
+
+    // Blogs Route
+    Route::resource('blog-categories', BlogCategoryController::class);
 });
 
 
