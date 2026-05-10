@@ -11,6 +11,11 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ProjectCategoryController;
+
+
+
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
@@ -50,6 +55,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::put('/comments/{comment}/pending', [CommentController::class, 'pending'])->name('comments.pending');
         Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
     });
+
+
+    // Project Routes
+    Route::resource('project-categories', ProjectCategoryController::class);
+    Route::resource('projects', ProjectController::class);
 
 });
 
