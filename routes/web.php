@@ -10,6 +10,7 @@ use App\Http\Controllers\ServiceCategoryController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CommentController;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
@@ -42,6 +43,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Blogs Route
     Route::resource('blog-categories', BlogCategoryController::class);
     Route::resource('blogs', BlogController::class);
+    Route::prefix('admin')->group(function () {
+        Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
+        Route::put('/comments/{comment}/approve', [CommentController::class, 'approve'])->name('comments.approve');
+        Route::put('/comments/{comment}/reject', [CommentController::class, 'reject'])->name('comments.reject');
+        Route::put('/comments/{comment}/pending', [CommentController::class, 'pending'])->name('comments.pending');
+        Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+    });
+
 });
 
 
