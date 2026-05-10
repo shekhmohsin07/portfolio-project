@@ -15,7 +15,7 @@ class BlogCategoryController extends Controller
     {
         $categories = BlogCategory::latest()->paginate(10);
 
-        return view('blog-categories.index', compact('categories'));
+        return view('backend.pages.blogs.categories.index', compact('categories'));
     }
 
     /**
@@ -23,7 +23,7 @@ class BlogCategoryController extends Controller
      */
     public function create()
     {
-        return view('blog-categories.create');
+        return view('backend.pages.blogs.categories.create');
     }
 
     /**
@@ -57,7 +57,7 @@ class BlogCategoryController extends Controller
      */
     public function edit(BlogCategory $blogCategory)
     {
-        return view('blog-categories.edit', compact('blogCategory'));
+        return view('backend.pages.blogs.categories.edit', compact('blogCategory'));
     }
 
     /**
