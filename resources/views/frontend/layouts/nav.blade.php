@@ -6,7 +6,7 @@
                     <div class="header-content">
                         <div class="logo">
                             <a href="index.html">
-                                <img class="logo-dark" src="{{ asset('frontend-assets/images/logo/white-logo-reeni.png') }}" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                                <img class="logo-dark" src="{{ asset('frontend-assets/images/logo/white-logo-reeni.png') }}" alt="Shekh Mohsin" style="width: 100px;">
                                 <img class="logo-white" src="{{ asset('frontend-assets/images/logo/logo-white.png') }}" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
                             </a>
                         </div>

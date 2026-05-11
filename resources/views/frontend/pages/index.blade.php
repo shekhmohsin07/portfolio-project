@@ -12,7 +12,7 @@
                         <div class="banner-right-content">
                             <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ asset('frontend-assets/images/banner/banner-user-image-one.png') }}" alt="banner-img">
                             <h2 class="banner-big-text-1 up-down">WEB DESIGNER</h2>
-                            <h2 class="banner-big-text-2 up-down-2">WEB DESIGNER</h2>
+                            <h2 class="banner-big-text-2 up-down-2">WEB DEVELOPER</h2>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
@@ -25,18 +25,18 @@
                                         <span class="cd-words-wrapper">
                                             <b class="is-visible theme-gradient">Web Designer.</b>
                                             <b class="is-hidden theme-gradient">Web Developer.</b>
-                                            <b class="is-hidden theme-gradient">UI/UX Designer.</b>
+                                            <b class="is-hidden theme-gradient">Laravel Developer.</b>
+                                            <b class="is-hidden theme-gradient">Wordpress Developer.</b>
                                             <b class="is-hidden theme-gradient">Freelancer.</b>
-                                            <b class="is-hidden theme-gradient">Content Writer.</b>
+                                            
                                         </span>
                                 </span>
                                 </span>
                             </h1>
-                            <p class="disc tmp-scroll-trigger tmp-fade-in animation-order-3"> A personal portfolio is a
-                                collection of your work, achievements, and skills
-                                that highlights your abilities and professional growth. It serves as </p>
+                            <p class="disc tmp-scroll-trigger tmp-fade-in animation-order-3" style="text-align: justify;"> Passionate Web Designer & Developer specializing in modern, responsive, and user-friendly websites.
+                                Experienced in Laravel, WordPress and freelance web solutions that help businesses grow online. </p>
                             <div class="button-area-banner-one tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                <a class="tmp-btn hover-icon-reverse radius-round" href="project.html">
+                                <a class="tmp-btn hover-icon-reverse radius-round" href="{{ route('projects') }}">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">View Portfolio</span>
                                     <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -62,35 +62,35 @@
                         <div class="service-card-icon">
                             <i class="fa-light fa-pen-ruler"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Web Design</a></h4>
-                        <p class="service-para">120 Projects</p>
+                        <h4 class="service-title"><a href="service-details.html">Website Design</a></h4>
+                        <p class="service-para">30+ Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-link-animation">
                         <div class="service-card-icon">
-                            <i class="fa-light fa-bezier-curve"></i>
+                            <i class="fab fa-wordpress"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Ui/Ux Design</a></h4>
-                        <p class="service-para">241 Projects</p>
+                        <h4 class="service-title"><a href="service-details.html">Wordpress Website</a></h4>
+                        <p class="service-para">25+ Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
                         <div class="service-card-icon">
-                            <i class="fa-light fa-lightbulb"></i>
+                            <i class="fab fa-laravel"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Web Research</a></h4>
-                        <p class="service-para">240 Projects</p>
+                        <h4 class="service-title"><a href="service-details.html">PHP/Laravel Website</a></h4>
+                        <p class="service-para">20+ Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-link-animation">
                         <div class="service-card-icon">
-                            <i class="fa-light fa-envelope"></i>
+                            <i class="fas fa-store"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Marketing</a></h4>
-                        <p class="service-para">331 Prodect</p>
+                        <h4 class="service-title"><a href="service-details.html">Code Canyon Customize</a></h4>
+                        <p class="service-para">5+ Prodect</p>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <div class="year-of-expariance-wrapper bg-blur-style-one tmp-scroll-trigger tmp-fade-in animation-order-1">
                         <div class="year-expariance-wrap">
                             <!-- <h2 class="year-number"><span class="counter">25 </span> </h2> -->
-                            <h2 class="counter year-number"><span class="odometer" data-count="25">00</span>
+                            <h2 class="counter year-number"><span class="odometer" data-count="5">00</span>
                             </h2>
                             <h3 class="year-title">Years Of <br> experience</h3>
                         </div>
@@ -120,30 +120,30 @@
                         <div class="row g-5">
                             <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <h3 class="counter counter-title"><span class="odometer" data-count="20">00</span>k+
+                                    <h3 class="counter counter-title"><span class="odometer" data-count="50">00</span>+
                                     </h3>
                                     <p class="counter-para">Our Project Complete</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                    <h3 class="counter counter-title"><span class="odometer" data-count="10">00</span>k+
+                                    <h3 class="counter counter-title"><span class="odometer" data-count="5">00</span>+
                                     </h3>
                                     <p class="counter-para">Our Natural Products</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                    <h3 class="counter counter-title"><span class="odometer" data-count="200">00</span>+
+                                    <h3 class="counter counter-title"><span class="odometer" data-count="30">00</span>+
                                     </h3>
                                     <p class="counter-para">Clients Reviews</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                    <h3 class="counter counter-title"><span class="odometer" data-count="1000">00</span>+
+                                    <h3 class="counter counter-title"><span class="odometer" data-count="40">00</span>+
                                     </h3>
-                                    <p class="counter-para">our Satisfied Clientd</p>
+                                    <p class="counter-para">our Satisfied Client</p>
                                 </div>
                             </div>
                         </div>
