@@ -167,63 +167,6 @@
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
                                 <h6 class="heading heading-h6">
-                                    PHOTOSHOT</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">100%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                                <h6 class="heading heading-h6">
-                                    FIGMA</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">95%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                                <h6 class="heading heading-h6">
-                                    ADOBE XD</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">60%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                                <h6 class="heading heading-h6">
-                                    ADOBE ILLUSTRATOR</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">70%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="progress-wrapper">
-                        <div class="content">
-                            <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                Development Skill <span><img src="{{ asset('frontend-assets/images/custom-line/custom-line.png') }}" alt="custom-line"></span>
-                            </h2>
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                                <h6 class="heading heading-h6">
                                     HTML</h6>
                                 <div class="progress">
                                     <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
@@ -248,10 +191,10 @@
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
                                 <h6 class="heading heading-h6">
-                                    Javascript</h6>
+                                    BOOTSTRAP</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">60%</span>
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 95%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">95%</span>
                                     </div>
                                 </div>
                             </div>
@@ -260,10 +203,67 @@
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
                                 <h6 class="heading heading-h6">
-                                    Wordpress</h6>
+                                    JAVASCRIPT</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">70%</span>
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="progress-wrapper">
+                        <div class="content">
+                            <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                Development Skill <span><img src="{{ asset('frontend-assets/images/custom-line/custom-line.png') }}" alt="custom-line"></span>
+                            </h2>
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    WORDPRESS</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    PHP</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    LARAVEL</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    REST API</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">90%</span>
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
         <div class="container">
             <div class="section-head mb--50">
                 <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                    <span class="subtitle">Education & Experience</span>
+                    <span class="subtitle">Experience</span>
                 </div>
                 <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Empowering Creativity
                     <br> through
@@ -331,7 +331,7 @@
                     consultants provide expert advice and guida
                     businesses to help them improve their performance, efficiency, and organizational</p>
             </div>
-            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Education <span><img
+            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">EXPERIENCE <span><img
                         src="{{ asset('frontend-assets/images/custom-line/custom-line.png') }}" alt="custom-line"></span>
             </h2>
             <div class="row g-5">
@@ -365,7 +365,7 @@
                     </div>
                 </div>
             </div>
-            <div class="experiences-wrapper">
+            {{-- <div class="experiences-wrapper">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="experiences-wrap-left-content">
@@ -393,7 +393,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
     <!-- Tpm Education Experience Area End -->
