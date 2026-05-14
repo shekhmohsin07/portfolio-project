@@ -49,21 +49,22 @@ class CommentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'blog_id' => 'required',
-            'name' => 'required',
-            'email' => 'required|email',
-            'comment' => 'required',
+            'blog_id' => 'required|exists:blogs,id',
+            'name' => 'required|string|max:255',
+            'email' => 'nullable|email',
+            'comment' => 'required|string',
         ]);
 
         Comment::create([
             'blog_id' => $request->blog_id,
+            'parent_id' => $request->parent_id ?? null,
             'name' => $request->name,
             'email' => $request->email,
             'comment' => $request->comment,
             'status' => 'pending',
         ]);
 
-        return back()->with('success', 'Comment added successfully');
+        return redirect()->back();
     }
 
     public function destroy(Comment $comment)
