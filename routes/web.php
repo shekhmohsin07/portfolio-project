@@ -21,6 +21,7 @@ Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 Route::get('/services', [PagesController::class, 'services'])->name('services');
 Route::get('/blogs', [PagesController::class, 'blogs'])->name('blogs');
+Route::get('/blog/{blog:slug}', [PagesController::class, 'blogDetails'])->name('blog.details');
 Route::get('/projects', [PagesController::class, 'projects'])->name('projects');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 

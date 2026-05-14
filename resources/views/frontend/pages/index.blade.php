@@ -337,31 +337,38 @@
             <div class="row g-5">
                 <div class="col-lg-6 col-sm-6">
                     <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                        <h4 class="edu-sub-title">Trainer Marketing</h4>
-                        <h2 class="edu-title">2005-2009</h2>
-                        <p class="edu-para">A personal portfolio is a curated collection of an individual's professional
-                            work, showcasing their skills, experience A personal portfolio.</p>
+                        <h4 class="edu-sub-title">Full Stack Web Developer</h4>
+                        <h2 class="edu-title">2022-Current</h2>
+                        <p class="edu-para">
+                            Working as a freelance Full Stack Web Developer on Fiverr, helping clients build modern, responsive, and user-friendly websites using Laravel, WordPress, and modern web technologies.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                        <h4 class="edu-sub-title">Assistant Director</h4>
-                        <h2 class="edu-title">2010-2014</h2>
-                        <p class="edu-para">Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs.</p>
+                        <h4 class="edu-sub-title">Full Stack Web Developer</h4>
+                        <h2 class="edu-title">2023-2024</h2>
+                        <p class="edu-para">
+                            Working at DUMATA Technology as a Web Developer, developing responsive websites, web applications, and custom solutions using modern technologies and frameworks.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                        <h4 class="edu-sub-title">Design Assistant</h4>
-                        <h2 class="edu-title">2008-2012</h2>
-                        <p class="edu-para">I’ve had the privilege of working with various clients, from startups to established companies, helping bring their visions to life.</p>
+                        <h4 class="edu-sub-title">Website Designer</h4>
+                        <h2 class="edu-title">2021-2022</h2>
+                        <p class="edu-para">
+                            Worked as a Web Designer at TechExpo IT, designing modern, responsive, and user-friendly website layouts with clean UI/UX design.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                        <h4 class="edu-sub-title">Design Assistant</h4>
-                        <h2 class="edu-title">2008-2012</h2>
-                        <p class="edu-para">Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs a personal.</p>
+                        <h4 class="edu-sub-title">Wordpress Developer</h4>
+                        <h2 class="edu-title">2020-2021</h2>
+                        <p class="edu-para">
+                            Worked as a WordPress Developer at Fara IT Limited, building responsive business websites, customizing themes, and developing user-friendly web solutions.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -570,8 +577,8 @@
                 <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                     <span class="subtitle">My Skill</span>
                 </div>
-                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Elevated Designs
-                    Personalized <br> the best Experiences</h2>
+                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Elevated
+                    Personalized the <br> best Experiences</h2>
             </div>
             <div class="services-widget v1">
                 <div class="service-item current tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -580,12 +587,12 @@
                             <i class="fa-light fa-building-columns"></i>
                         </div>
                         <div class="card-title">
-                            <h3 class="main-title">Ui/visual Design</h3>
+                            <h3 class="main-title">Responsive Web Design</h3>
                             <p class="sub-title">21 Done</p>
                         </div>
                         <p class="card-para">My work is driven by the belief that thoughtful design and strategic planning can empower brands strategic planning can empower brands</p>
-                        <a href="#" class="read-more-btn">Read More <span class="read-more-icon"><i
-                        class="fa-solid fa-angle-right"></i></span></a>
+                        {{-- <a href="#" class="read-more-btn">Read More <span class="read-more-icon"><i
+                        class="fa-solid fa-angle-right"></i></span></a> --}}
                     </div>
                     <button class="service-link modal-popup"></button>
                 </div>
@@ -595,12 +602,11 @@
                             <i class="fa-light fa-calendar"></i>
                         </div>
                         <div class="card-title">
-                            <h3 class="main-title">Ui/visual Design</h3>
+                            <h3 class="main-title">Wordpress Development</h3>
                             <p class="sub-title">21 Done</p>
                         </div>
                         <p class="card-para">In this portfolio, you’ll find a curated selection of projects that highlight my skills in [Main Areas, e.g., responsive web design</p>
-                        <a href="#" class="read-more-btn">Read More <span class="read-more-icon"><i
-                        class="fa-solid fa-angle-right"></i></span></a>
+                        
                     </div>
                     <button class="service-link modal-popup"></button>
                 </div>
@@ -610,12 +616,11 @@
                             <i class="fa-light fa-pen-nib"></i>
                         </div>
                         <div class="card-title">
-                            <h3 class="main-title">Motion Design</h3>
+                            <h3 class="main-title">PHP/Laravel Development</h3>
                             <p class="sub-title">20 Done</p>
                         </div>
                         <p class="card-para">Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs</p>
-                        <a href="#" class="read-more-btn">Read More <span class="read-more-icon"><i
-                        class="fa-solid fa-angle-right"></i></span></a>
+                       
                     </div>
                     <button class="service-link modal-popup"></button>
                 </div>
@@ -779,69 +784,44 @@
                     Branding the <br> through Powerful Portfolios</h2>
             </div>
             <div class="row">
+                @forelse($blogs as $blog)
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
                         <div class="img-box">
-                            <a href="blog-details.html">
-                                <img class="w-100" src="{{ asset('frontend-assets/images/blog/blog-img-1.jpg') }}" alt="Blog Thumbnail">
+                            <a href="{{ route('blog.details', $blog->slug) }}">
+                                <img class="w-100" src="{{ asset('uploads/blogs/'.$blog->image) }}" alt="{{ $blog->title }}">
                             </a>
                             <ul class="blog-tags">
-                                <li><span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah</li>
-                                <li><span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10</li>
+                                <li><span class="tag-icon"><i class="fa-regular fa-user"></i></span>Admin</li>
+                                <li>
+                                    <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                    {{ \Carbon\Carbon::parse($blog->updated_at)->format('M d') }}
+                                </li>
                             </ul>
                         </div>
                         <div class="blog-content-wrap">
-                            <h3 class="blog-title"><a class="link" href="blog-details.html">Inspiring the World, One
-                                    Project at a
-                                    Time for the
-                                    man</a></h3>
+                            <h3 class="blog-title">
+                                <a class="link" href="blog-details.html">{{ Str::limit($blog->title, 60) }}</a>
+                            </h3>
                             <div class="more-btn tmp-link-animation">
-                                <a href="blog-details.html" class="read-more-btn">Read More <span class="read-more-icon"><i
-                            class="fa-solid fa-angle-right"></i></span></a>
+                                <a href="{{ route('blog.details', $blog->slug) }}" class="read-more-btn">Read More <span class="read-more-icon"><i
+                                class="fa-solid fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                        <div class="img-box">
-                            <a href="blog-details.html">
-                                <img class="w-100" src="{{ asset('frontend-assets/images/blog/blog-img-2.jpg') }}" alt="Blog Thumbnail">
-                            </a>
-                            <ul class="blog-tags">
-                                <li><span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah</li>
-                                <li><span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10</li>
-                            </ul>
-                        </div>
-                        <div class="blog-content-wrap">
-                            <h3 class="blog-title"><a class="link" href="blog-details.html">Let’s bring your ideas to life! Contact me, and let’s</a></h3>
-                            <div class="more-btn tmp-link-animation">
-                                <a href="blog-details.html" class="read-more-btn">Read More <span class="read-more-icon"><i
-                            class="fa-solid fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
+                 @empty
+
+                <div class="col-12 text-center">
+
+                    <p>
+                        No blogs found.
+                    </p>
+
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                        <div class="img-box">
-                            <a href="blog-details.html">
-                                <img class="w-100" src="{{ asset('frontend-assets/images/blog/blog-img-3.jpg') }}" alt="Blog Thumbnail">
-                            </a>
-                            <ul class="blog-tags">
-                                <li><span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah</li>
-                                <li><span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10</li>
-                            </ul>
-                        </div>
-                        <div class="blog-content-wrap">
-                            <h3 class="blog-title"><a class="link" href="blog-details.html">Each one showcases my approach and dedication man</a></h3>
-                            <div class="more-btn tmp-link-animation">
-                                <a href="blog-details.html" class="read-more-btn">Read More <span class="read-more-icon"><i
-                            class="fa-solid fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                @endforelse
+                
             </div>
         </div>
     </section>

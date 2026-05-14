@@ -31,7 +31,7 @@
                         </div>
                         <div class="blog-details-discription">
                             <div class="blog-classic-tag">
-                                <h4 class="title">By Stanio lainto</h4>
+                                <h4 class="title">By Admin</h4>
                                 <ul>
                                     <li>
                                         <div class="tag-wrap">
