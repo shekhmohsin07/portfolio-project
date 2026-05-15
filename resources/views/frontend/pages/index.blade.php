@@ -801,7 +801,7 @@
                         </div>
                         <div class="blog-content-wrap">
                             <h3 class="blog-title">
-                                <a class="link" href="blog-details.html">{{ Str::limit($blog->title, 60) }}</a>
+                                <a class="link" href="{{ route('blog.details', $blog->slug) }}">{{ Str::limit($blog->title, 60) }}</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <a href="{{ route('blog.details', $blog->slug) }}" class="read-more-btn">Read More <span class="read-more-icon"><i

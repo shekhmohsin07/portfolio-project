@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use App\Models\BlogCategory;
 
 class PagesController extends Controller
 {
@@ -26,9 +27,23 @@ class PagesController extends Controller
         return view('frontend.pages.services');
     }
 
-    public function blogs()
+    public function blogs(Request $request)
     {
-        return view('frontend.pages.blogs');
+        $blogs = Blog::with(['category', 'comments']) 
+                        ->when($request->search, function ($query) use ($request) { 
+                        $query->where('title', 'like', '%' . $request->search . '%') 
+                        ->orWhere('short_description', 'like', '%' . $request->search . '%'); }) 
+                        ->latest() ->paginate(3);
+        $categories = BlogCategory::withCount('blogs')
+                    ->having('blogs_count', '>', 0)
+                    ->get();
+        $latestBlogs = Blog::take(4)
+                        ->get();
+        return view('frontend.pages.blogs', compact(
+            'blogs',
+            'latestBlogs',
+            'categories'
+            ));
     }
 
     public function blogDetails(Blog $blog)
@@ -43,12 +58,16 @@ class PagesController extends Controller
 
         $latestBlogs = Blog::latest()
                         ->where('id', '!=', $blog->id)
-                        ->take(3)
+                        ->take(4)
                         ->get();
+        $categories = BlogCategory::withCount('blogs')
+                    ->having('blogs_count', '>', 0)
+                    ->get();
 
         return view('frontend.pages.blog-details', compact(
             'blog',
-            'latestBlogs'
+            'latestBlogs',
+            'categories'
         ));
     }
 
