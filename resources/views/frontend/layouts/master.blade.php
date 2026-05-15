@@ -30,7 +30,8 @@
 
 
     <!-- ready chatting option via email -->
-    <div class="ready-chatting-option tmp-ready-chat">
+
+    {{-- <div class="ready-chatting-option tmp-ready-chat">
         <input type="checkbox" id="click">
         <label for="click">
             <i class="fab fa-facebook-messenger"></i>
@@ -60,6 +61,15 @@
                 </form>
             </div>
         </div>
+    </div> --}}
+
+
+    <div class="ready-chatting-option tmp-ready-chat">
+        <a href="https://wa.me/8801858012033" target="_blank" class="whatsapp-btn">
+        <label for="click">
+                <i class="fab fa-whatsapp"></i>
+        </label>
+        </a>
     </div>
     <!-- ready chatting option via email end -->
     <!-- progress area start -->
