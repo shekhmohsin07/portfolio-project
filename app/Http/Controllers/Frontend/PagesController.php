@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\BlogCategory;
+use App\Models\Service;
+use App\Models\ServiceCategory;
 
 class PagesController extends Controller
 {
@@ -24,7 +26,16 @@ class PagesController extends Controller
 
     public function services()
     {
-        return view('frontend.pages.services');
+        $services = Service::latest()->get();
+
+        return view('frontend.pages.services', compact('services'));
+    }
+
+    public function serviceDetails(Service $service)
+    {
+        $categories = ServiceCategory::withCount('services')->get();
+
+        return view('frontend.pages.service-details', compact('service', 'categories'));
     }
 
     public function blogs(Request $request)

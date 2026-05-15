@@ -20,6 +20,7 @@ use App\Http\Controllers\ProjectCategoryController;
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 Route::get('/services', [PagesController::class, 'services'])->name('services');
+Route::get('/service/{service:slug}', [PagesController::class, 'serviceDetails'])->name('service.details');
 Route::get('/blogs', [PagesController::class, 'blogs'])->name('blogs');
 Route::get('/blog/{blog:slug}', [PagesController::class, 'blogDetails'])->name('blog.details');
 Route::post('/comments/store', [CommentController::class, 'store'])->name('comments.store');
