@@ -17,8 +17,12 @@ class PagesController extends Controller
     {
 
         $blogs = Blog::latest()->take(3)->get();
+        $projects = Project::latest()->take(4)->get();
 
-        return view('frontend.pages.index', compact('blogs'));
+        return view('frontend.pages.index', compact(
+            'blogs',
+            'projects'
+        ));
     }
 
     public function about()

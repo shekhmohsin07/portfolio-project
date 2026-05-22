@@ -466,25 +466,25 @@
                 </h2>
                 <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">Business consulting
                     consultants provide expert advice and guida
-                    businesses to help them improve their performance, efficiency, and organizational</p>
+                    businesses to help them improve their performance, efficiency and organizational</p>
             </div>
             <div class="row">
+                @foreach($projects as $project)
                 <div class="col-lg-6 col-sm-6">
                     <div class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-1">
                         <div class="portfoli-card-img">
                             <div class="img-box v2">
-                                <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                <img class="w-100" src="{{ asset('frontend-assets/images/latest-portfolio/portfoli-img-1.jpg') }}" alt="Thumbnail">
+                                <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="{{ route('project.details', $project->slug) }}">
+                                <img class="w-100" src="{{ asset('uploads/projects/'.$project->image) }}" alt="{{ $project->title }}">
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-card-content-wrap">
                             <div class="content-left">
-                                <h3 class="portfolio-card-title"><a class="link" href="project-details.html">Digital
-                                        Transformation Advisors</a></h3>
-                                <p class="portfoli-card-para">Development Coaches</p>
+                                <h3 class="portfolio-card-title"><a class="link" href="{{ route('project.details', $project->slug) }}">{{ $project->title }}</a></h3>
+                                <p class="portfoli-card-para">{{ $project->category->name ?? '' }}</p>
                             </div>
-                            <a href="project-details.html" class="tmp-arrow-icon-btn">
+                            <a href="{{ route('project.details', $project->slug) }}" class="tmp-arrow-icon-btn">
                                 <div class="btn-inner">
                                     <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
                                     <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
@@ -493,78 +493,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-sm-6">
-                    <div class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-2">
-                        <div class="portfoli-card-img">
-                            <div class="img-box v2">
-                                <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                    <img class="w-100" src="{{ asset('frontend-assets/images/latest-portfolio/portfoli-img-2.jpg') }}" alt="Thumbnail">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio-card-content-wrap">
-                            <div class="content-left">
-                                <h3 class="portfolio-card-title"><a class="link" href="project-details.html">My work is driven by the belief that thoughtful.</a></h3>
-                                <p class="portfoli-card-para">Development App</p>
-                            </div>
-                            <a href="project-details.html" class="tmp-arrow-icon-btn">
-                                <div class="btn-inner">
-                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
-                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-sm-6">
-                    <div class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-3">
-                        <div class="portfoli-card-img">
-                            <div class="img-box v2">
-                                <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                    <img class="w-100" src="{{ asset('frontend-assets/images/latest-portfolio/portfoli-img-3.jpg') }}" alt="Thumbnail">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio-card-content-wrap">
-                            <div class="content-left">
-                                <h3 class="portfolio-card-title"><a class="link" href="project-details.html">In this portfolio, you’ll find a curated selection</a></h3>
-                                <p class="portfoli-card-para">Web Design</p>
-                            </div>
-                            <a href="project-details.html" class="tmp-arrow-icon-btn">
-                                <div class="btn-inner">
-                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
-                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-sm-6">
-                    <div class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-4">
-                        <div class="portfoli-card-img">
-                            <div class="img-box v2">
-                                <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                    <img class="w-100" src="{{ asset('frontend-assets/images/latest-portfolio/portfoli-img-4.jpg') }}" alt="Thumbnail">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio-card-content-wrap">
-                            <div class="content-left">
-                                <h3 class="portfolio-card-title"><a class="link" href="project-details.html">I’ve had the privilege of working with various</a></h3>
-                                <p class="portfoli-card-para">App Development</p>
-                            </div>
-                            <a href="project-details.html" class="tmp-arrow-icon-btn">
-                                <div class="btn-inner">
-                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
-                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -639,24 +568,24 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card">
                                 <div class="card-content-wrap">
-                                    <h2 class="text-doc">Working with themespark was an absolute pleasure! They understood my vision immediately and brought it to life even better than I’d imagined.</h2>
-                                    <h3 class="card-title">Cameron Williamson</h3>
-                                    <p class="card-para">Ui/Ux Designer</p>
+                                    <h2 class="text-doc">Working with themespark was an absolute pleasure! He understood my vision immediately and brought it to life even better than I’d imagined.</h2>
+                                    <h3 class="card-title">Mehedi Hassan Rifat</h3>
+                                    <p class="card-para">Digital Marketer</p>
                                     <div class="testimonital-icon">
                                         <img src="{{ asset('frontend-assets/images/testimonial/testimonial-icon.svg') }}" alt="testimonial-icon">
                                     </div>
                                 </div>
                                 <div class="testimonial-card-img">
-                                    <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ asset('frontend-assets/images/testimonial/bg-image-1png.png') }}" alt="bg-image">
+                                    <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ asset('frontend-assets/images/testimonial/bg-image-1.png') }}" alt="bg-image">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testimonial-card">
                                 <div class="card-content-wrap">
-                                    <h2 class="text-doc">ThemesPark is incredibly talented and detail-oriented. They took the time to understand my brand and created something truly unique</h2>
-                                    <h3 class="card-title">Cameron Williamson</h3>
-                                    <p class="card-para">Ui/Ux Designer</p>
+                                    <h2 class="text-doc">His professionalism and attention to detail truly impressed me. The entire process was smooth, creative, and highly efficient.</h2>
+                                    <h3 class="card-title">Aniqa Shahjabin</h3>
+                                    <p class="card-para">Nutritionist</p>
                                     <div class="testimonital-icon">
                                         <img src="{{ asset('frontend-assets/images/testimonial/testimonial-icon.svg') }}" alt="testimonial-icon">
                                     </div>
@@ -669,16 +598,15 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card">
                                 <div class="card-content-wrap">
-                                    <h2 class="text-doc">A personal portfolio is a curated collection of an individual's
-                                        professional work, showcasing their skills, experience, and achievements</h2>
-                                    <h3 class="card-title">Cameron Williamson</h3>
-                                    <p class="card-para">Ui/Ux Designer</p>
+                                    <h2 class="text-doc">Exceptional service and amazing communication throughout the project. I highly recommend themespark for any creative web solution.</h2>
+                                    <h3 class="card-title">Rakin Rehan</h3>
+                                    <p class="card-para">Entrepreneur</p>
                                     <div class="testimonital-icon">
                                         <img src="{{ asset('frontend-assets/images/testimonial/testimonial-icon.svg') }}" alt="testimonial-icon">
                                     </div>
                                 </div>
                                 <div class="testimonial-card-img">
-                                    <img class="tmp-scroll-trigger tmp-zoom-in animation-order-3" src="{{ asset('frontend-assets/images/testimonial/bg-image-1png.png') }}" alt="bg-image">
+                                    <img class="tmp-scroll-trigger tmp-zoom-in animation-order-3" src="{{ asset('frontend-assets/images/testimonial/bg-image-3.png') }}" alt="bg-image">
                                 </div>
                             </div>
                         </div>
