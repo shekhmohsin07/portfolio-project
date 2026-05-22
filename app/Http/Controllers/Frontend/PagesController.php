@@ -8,6 +8,8 @@ use App\Models\Blog;
 use App\Models\BlogCategory;
 use App\Models\Service;
 use App\Models\ServiceCategory;
+use App\Models\Project;
+use App\Models\ProjectCategory;
 
 class PagesController extends Controller
 {
@@ -84,7 +86,13 @@ class PagesController extends Controller
 
     public function projects()
     {
-        return view('frontend.pages.projects');
+        $projects = Project::with('category')->latest()->get();
+        $projectCategories = ProjectCategory::withCount('projects')->get();
+
+        return view('frontend.pages.projects', compact(
+            'projects',
+            'projectCategories'
+        ));
     }
 
     public function contact()

@@ -30,745 +30,88 @@
                         <li>
                             <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
                         </li>
+
+                        @foreach($projectCategories as $category)
                         <li>
-                            <button class="nav-link" id="nav-branding-tab" data-bs-toggle="tab" data-bs-target="#nav-branding" type="button" role="tab" aria-controls="nav-branding" aria-selected="false">Branding</button>
+                            <button class="nav-link" id="nav-{{ $category->slug }}-tab" data-bs-toggle="tab" data-bs-target="#nav-{{ $category->slug }}" type="button" role="tab">
+                                {{ $category->name }}
+                            </button>
                         </li>
-                        <li>
-                            <button class="nav-link" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="false">Design</button>
-                        </li>
-                        <li>
-                            <button class="nav-link" id="nav-content-writing-tab" data-bs-toggle="tab" data-bs-target="#nav-content-writing" type="button" role="tab" aria-controls="nav-content-writing" aria-selected="false">Content writing</button>
-                        </li>
-                        <li>
-                            <button class="nav-link" id="nav-marketing-tab" data-bs-toggle="tab" data-bs-target="#nav-marketing" type="button" role="tab" aria-controls="nav-marketing" aria-selected="false">Marketing</button>
-                        </li>
+                        @endforeach
                     </ul>
                 </nav>
                 <div class="tab-content bg-blur-style-one" id="nav-tabContent">
+                    {{-- All project --}}
                     <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
                         <div class="row">
+                             @foreach($projects as $project)
                             <div class="col-lg-6">
                                 <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in">
                                     <div class="portfoli-card-img">
                                         <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-1.jpg" alt="Thumbnail">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in" href="{{ route('project.details', $project->slug) }}">
+                                                <img class="w-100" src="{{ asset('uploads/projects/'.$project->image) }}" alt="{{ $project->title }}">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="portfolio-card-content-wrap">
                                         <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
-                                                    design</a></h3>
+                                            <h3 class="portfolio-card-title"><a href="{{ route('project.details', $project->slug) }}">{{ $project->title }}</a>
+                                            </h3>
                                             <div class="tag-items">
                                                 <ul>
                                                     <li>
-                                                        <a href="#" class="tag-item">Figma</a>
+                                                        <a href="#" class="tag-item">{{ $project->category->name ?? '' }}</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
+                                        
                                                 </ul>
                                             </div>
                                         </div>
 
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="{{ route('project.details', $project->slug) }}">
                                             <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
+                                                <span class="btn-text">View Project</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                             </span>
                                         </a>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-3.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Ai</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-4.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Framer</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Wordpress</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-2.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-branding" role="tabpanel" aria-labelledby="nav-branding-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-1.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-3.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Ai</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-4.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Framer</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Wordpress</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-2.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-design" role="tabpanel" aria-labelledby="nav-design-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-1.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-3.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Ai</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-4.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Framer</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Wordpress</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-2.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-content-writing" role="tabpanel" aria-labelledby="nav-content-writing-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-1.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-3.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Ai</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-4.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Framer</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Wordpress</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-2.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-marketing" role="tabpanel" aria-labelledby="nav-marketing-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-1.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-3.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Ai</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                    <div class="portfoli-card-img">
-                                        <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-4.jpg" alt="Thumbnail">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-card-content-wrap">
-                                        <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
-                                                    design</a></h3>
-                                            <div class="tag-items">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Figma</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Framer</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Wordpress</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
 
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
-                                            <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                    {{-- Category Wise Projects --}}
+                    @foreach($projectCategories as $category)
+                    <div class="tab-pane fade" id="nav-{{ Str::slug($category->name) }}" role="tabpanel" aria-labelledby="nav-{{ Str::slug($category->name) }}-tab" tabindex="0">
+                        <div class="row">
+                            @foreach($category->projects as $project)
                             <div class="col-lg-6">
-                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
                                     <div class="portfoli-card-img">
                                         <div class="img-box v2">
-                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
-                                                <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-2.jpg" alt="Thumbnail">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="{{ route('project.details', $project->slug) }}">
+                                                <img class="w-100" src="{{ asset('uploads/projects/'.$project->image) }}" alt="{{ $project->title }}">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="portfolio-card-content-wrap">
                                         <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
-                                                    design</a></h3>
+                                            <h3 class="portfolio-card-title"><a href="{{ route('project.details', $project->slug) }}">{{ $project->title }}</a></h3>
                                             <div class="tag-items">
                                                 <ul>
                                                     <li>
-                                                        <a href="#" class="tag-item">Adobe</a>
+                                                        <a href="#" class="tag-item">{{ $category->name }}</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#" class="tag-item">Webflow</a>
-                                                    </li>
+                                
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="{{ route('project.details', $project->slug) }}">
                                             <span class="icon-reverse-wrapper">
-                                                <span class="btn-text">View design</span>
+                                            <span class="btn-text">View Project</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                             </span>
@@ -776,8 +119,11 @@
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
                     </div>
+                    @endforeach
+                    
                 </div>
             </div>
         </div>
