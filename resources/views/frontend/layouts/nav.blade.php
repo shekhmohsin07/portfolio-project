@@ -49,10 +49,10 @@
                         <div class="tmp-header-right">
                             <div class="social-share-wrapper d-none d-md-block">
                                 <div class="social-link">
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/shekh_mohsin07"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="https://linkedin.com/in/shekh-mohsin07"><i class="fa-brands fa-linkedin-in"></i></a>
                                     <a href="https://github.com/shekhmohsin07"><i class="fa-brands fa-github"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100072255151442"><i class="fa-brands fa-facebook-f"></i></a>
                                 </div>
                             </div>
                             <div class="actions-area">
@@ -129,10 +129,10 @@
                     <div class="social-wrapper mt--20">
                         <span class="subtitle">find with me</span>
                         <div class="social-link">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/shekh_mohsin07"><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://linkedin.com/in/shekh-mohsin07"><i class="fa-brands fa-linkedin-in"></i></a>
                             <a href="https://github.com/shekhmohsin07"><i class="fa-brands fa-github"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100072255151442"><i class="fa-brands fa-facebook-f"></i></a>
                         </div>
                     </div>
                     <!-- social area end -->
@@ -191,10 +191,10 @@
                 <div class="social-wrapper mt--40">
                     <span class="subtitle">find with me</span>
                     <div class="social-link">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/shekh_mohsin07"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://linkedin.com/in/shekh-mohsin07"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://github.com/shekhmohsin07"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100072255151442"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
                 <!-- social area end -->

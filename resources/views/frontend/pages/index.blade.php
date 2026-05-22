@@ -644,35 +644,36 @@
                             <div class="contact-inner">
                                 <div class="contact-form">
                                     <div id="form-messages" class="error"></div>
-                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="https://inversweb.com/product/html/reeni/mailer.php">
+                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="{{ route('contact.store') }}">
+                                        @csrf
                                         <div class="contact-form-wrapper row">
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="input-field" name="name" id="contact-name" placeholder="Your Name" type="text" required>
+                                                    <input class="input-field" name="name" id="contact-name" placeholder="Your Name" type="text" value="{{ old('name') }}" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="input-field" id="contact-phone" placeholder="Phone Number" type="tel" required>
+                                                    <input class="input-field" id="contact-phone" placeholder="Phone Number" type="tel" value="{{ old('phone') }}" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="input-field" id="contact-email" name="email" placeholder="Your Email" type="email" required>
+                                                    <input class="input-field" id="contact-email" name="email" placeholder="Your Email" type="email" value="{{ old('email') }}" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="input-field" type="text" id="subject" name="subject" placeholder="Subject">
+                                                    <input class="input-field" type="text" id="subject" name="subject" placeholder="Subject" value="{{ old('subject') }}">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <textarea class="input-field" placeholder="Your Message" name="message" id="contact-message" required></textarea>
+                                                    <textarea class="input-field" placeholder="Your Message" name="message" id="contact-message"  required> {{ old('message') }} </textarea>
                                                 </div>
                                             </div>
 

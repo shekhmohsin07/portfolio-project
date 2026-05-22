@@ -23,19 +23,19 @@
                             <h5 class="ft-title">Quick Link</h5>
                             <ul class="ft-link tmp-link-animation">
                                 <li>
-                                    <a href="about.html">About Me</a>
+                                    <a href="{{ route('about') }}">About Me</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">Service</a>
+                                    <a href="{{ route('services') }}">Service</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact Me</a>
+                                    <a href="{{ route('contact') }}">Contact Me</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Blog Post</a>
+                                    <a href="{{ route('blogs') }}">Blog Post</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Pricing</a>
+                                    <a href="{{ route('projects') }}">Projects</a>
                                 </li>
                             </ul>
                         </div>
@@ -44,15 +44,15 @@
                         <div class="single-footer-wrapper contact-wrap">
                             <h5 class="ft-title">Contact </h5>
                             <ul class="ft-link tmp-link-animation">
-                                <li><span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a href="#">example@gmail.com</a></li>
+                                <li><span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a href="#">shekhmohammadmohsin@gmail.com</a></li>
                                 <li><span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>Mirpur-13, Dhaka, Bangladesh</li>
                                 <li><span class="ft-icon"><i class="fa-solid fa-phone"></i></span><a href="#">01858012033</a></li>
                             </ul>
                             <div class="social-link footer">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/shekh_mohsin07"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://linkedin.com/in/shekh-mohsin07"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com/shekhmohsin07"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100072255151442"><i class="fa-brands fa-facebook-f"></i></a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         <ul class="tmp-link-animation">
                             <li><a href="#">Trams & Condition</a></li>
                             <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="{{ route('contact') }}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

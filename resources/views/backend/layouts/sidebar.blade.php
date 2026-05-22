@@ -21,7 +21,7 @@
                             </div>
                             <div class="profile-controls">
                                 <a href="{{ route('profile.edit') }}" class="profile-control-left"><span class="fa fa-info"></span></a>
-                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                                <a href="{{ route('contacts.index') }}" class="profile-control-right"><span class="fa fa-envelope"></span></a>
                             </div>
                         </div>                                                                        
                     </li>

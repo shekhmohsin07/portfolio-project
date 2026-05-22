@@ -13,6 +13,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ProjectCategoryController;
+use App\Http\Controllers\Frontend\ContactController;
+
+use Illuminate\Support\Facades\Mail;
 
 
 
@@ -27,6 +30,19 @@ Route::post('/comments/store', [CommentController::class, 'store'])->name('comme
 Route::get('/projects', [PagesController::class, 'projects'])->name('projects');
 Route::get('/project/{project:slug}', [PagesController::class, 'projectDetails'])->name('project.details');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::post('/contact/store', [ContactController::class, 'store']) ->name('contact.store');
+
+
+Route::get('/test-mail', function () {
+
+    Mail::raw('Test email from Laravel SMTP', function ($message) {
+        $message->to('shekhmohammadmohsin@gmail.com')
+                ->subject('SMTP Test');
+    });
+
+    return 'Mail Sent Successfully';
+
+});
 
 
 
@@ -65,6 +81,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
         // Project Routes
         Route::resource('project-categories', ProjectCategoryController::class);
         Route::resource('projects', ProjectController::class);
+
+        // Contact Routes
+        Route::get('/contacts', [ContactController::class, 'index']) ->name('contacts.index');
+        Route::get('/contacts/{id}', [ContactController::class, 'show']) ->name('contacts.show');
+        Route::delete('/contacts/{id}', [ContactController::class, 'destroy']) ->name('contacts.destroy');
     });
 
 
