@@ -50,8 +50,8 @@
                             <div class="social-share-wrapper d-none d-md-block">
                                 <div class="social-link">
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://linkedin.com/in/shekh-mohsin07"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://github.com/shekhmohsin07"><i class="fa-brands fa-github"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 </div>
                             </div>
@@ -91,8 +91,8 @@
                             <img src="{{ asset('frontend-assets/images/logo/man.png') }}" alt="personal-logo">
                         </a>
                     </div>
-                    <h5 class="title mt--30">Freelancer delivering exceptional Webflow, and Next.js solutions.</h5>
-                    <p class="disc">I am a skilled freelancer specializing in Webflow development, Figma design, and Next.js projects. I deliver creative, dynamic, and user-centric web solutions.
+                    <h5 class="title mt--30">Freelancer delivering exceptional wordpress website, Webflow and PHP Laravel solutions.</h5>
+                    <p class="disc" style="text-align: justify;">Passionate Web Designer & Developer specializing in modern, responsive, and user-friendly websites. Experienced in Laravel, WordPress and freelance web solutions that help businesses grow online.
                     </p>
                     <div class="short-contact-area">
                         <!-- single contact information -->
@@ -100,7 +100,7 @@
                             <i class="fa-solid fa-phone"></i>
                             <div class="information tmp-link-animation">
                                 <span>Call Now</span>
-                                <a href="#" class="number">+92 (8800) - 98670</a>
+                                <a href="#" class="number">+880 1858-012033</a>
                             </div>
                         </div>
                         <!-- single contact information end -->
@@ -110,7 +110,7 @@
                             <i class="fa-solid fa-envelope"></i>
                             <div class="information tmp-link-animation">
                                 <span>Mail Us</span>
-                                <a href="#" class="number">example@info.com</a>
+                                <a href="#" class="number">contact@shekhmohsin.com</a>
                             </div>
                         </div>
                         <!-- single contact information end -->
@@ -120,7 +120,7 @@
                             <i class="fa-solid fa-location-crosshairs"></i>
                             <div class="information tmp-link-animation">
                                 <span>My Address</span>
-                                <span class="number">66 Broklyant, New York 3269</span>
+                                <span class="number">Mirpur-13, Dhaka Bangladesh</span>
                             </div>
                         </div>
                         <!-- single contact information end -->
@@ -130,8 +130,8 @@
                         <span class="subtitle">find with me</span>
                         <div class="social-link">
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://linkedin.com/in/shekh-mohsin07"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/shekhmohsin07"><i class="fa-brands fa-github"></i></a>
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         </div>
                     </div>
@@ -192,8 +192,8 @@
                     <span class="subtitle">find with me</span>
                     <div class="social-link">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/shekh-mohsin07"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/shekhmohsin07"><i class="fa-brands fa-github"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>

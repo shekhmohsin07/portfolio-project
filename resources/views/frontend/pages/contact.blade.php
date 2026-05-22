@@ -29,8 +29,8 @@
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <h3 class="title">Address</h3>
-                            <p class="para">Dhaka 102, utl 1216, road 45</p>
-                            <p class="para">house of street</p>
+                            <p class="para">Road-2, Block-B, Section-13</p>
+                            <p class="para">Mirpur, Dhaka - 1216</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -39,11 +39,11 @@
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <h3 class="title">E-mail</h3>
-                            <a href="mailto:themespark11@gmail.com">
-                                <p class="para">hasan@yourmail.com</p>
+                            <a href="mailto:shekhmohammadmohsin@gmail.com">
+                                <p class="para">shekhmohammadmohsin@gmail.com</p>
                             </a>
-                            <a href="mailto:themespark11@gmail.com">
-                                <p class="para">themespark11@gmail.com</p>
+                            <a href="mailto:contact@shekhmohsin.com">
+                                <p class="para">contact@shekhmohsin.com</p>
                             </a>
                         </div>
                     </div>
@@ -53,8 +53,8 @@
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <h3 class="title">Call Me</h3>
-                            <p class="para">0000 - 000 - 000 00</p>
-                            <p class="para">+1234 - 000</p>
+                            <p class="para">+880 1858-012033</p>
+                            <p class="para">+880 1639-657052</p>
                         </div>
                     </div>
                 </div>
