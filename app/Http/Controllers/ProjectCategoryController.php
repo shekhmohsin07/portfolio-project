@@ -37,7 +37,7 @@ class ProjectCategoryController extends Controller
 
         ProjectCategory::create([
             'name' => $request->name,
-            'slug' => Str::slug($request->name).'-'.time(),
+            'slug' => Str::slug($request->name),
         ]);
 
         return redirect()->route('project-categories.index');
@@ -69,7 +69,7 @@ class ProjectCategoryController extends Controller
 
         $projectCategory->update([
             'name' => $request->name,
-            'slug' => Str::slug($request->name).'-'.time(),
+            'slug' => Str::slug($request->name),
         ]);
 
         return redirect()->route('project-categories.index');

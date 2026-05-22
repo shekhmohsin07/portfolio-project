@@ -25,6 +25,7 @@ Route::get('/blogs', [PagesController::class, 'blogs'])->name('blogs');
 Route::get('/blog/{blog:slug}', [PagesController::class, 'blogDetails'])->name('blog.details');
 Route::post('/comments/store', [CommentController::class, 'store'])->name('comments.store');
 Route::get('/projects', [PagesController::class, 'projects'])->name('projects');
+Route::get('/project/{project:slug}', [PagesController::class, 'projectDetails'])->name('project.details');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 
 

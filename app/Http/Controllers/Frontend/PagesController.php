@@ -95,6 +95,19 @@ class PagesController extends Controller
         ));
     }
 
+    public function projectDetails(Project $project)
+    {
+        $relatedProjects = Project::where('id', '!=', $project->id)
+            ->where('project_category_id', $project->project_category_id)
+            ->latest()
+            ->take(4)
+            ->get();
+
+        return view('frontend.pages.project-details', compact(
+            'project',
+            'relatedProjects'
+        ));
+    }
     public function contact()
     {
         return view('frontend.pages.contact');

@@ -26,20 +26,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="project-details-thumnail-wrap">
-                        <img src="assets/images/projects-details/thumnail-img.png" alt="thumbnail">
+                        <img src="{{ asset('uploads/projects/'.$project->image) }}" alt="{{ $project->title }}">
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="project-details-content-wrap">
-                        <h2 class="title">Supporting Health Initiatives</h2>
-                        <p class="docs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            printer took a galltype and scrambled it to make a type specimen book. It has survived not
-                            only five centuries tinto electronic typesetting remaining essentially unchanged</p>
-                        <p class="docs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            print</p>
-
+                        <h2 class="title">{{ $project->title }}</h2>
+                        <p class="docs">{{ $project->short_description }}</p>
                         <div class="check-box-wrap">
                             <ul>
                                 <li>
@@ -56,37 +49,34 @@
                                 </li>
                             </ul>
                         </div>
-                        <h2 class="mini-title">Elevate Your Business with IT Solutions</h2>
-                        <p class="docs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            printer took a galltype and scrambled it to make a type specimen book. It has survived not
-                            only five centuries tinto electronic typesetting remaining essentially unchanged</p>
+                        <p class="docs">{!! $project->description !!}</p>
+
+                        
                         <div class="project-details-swiper-wrapper">
-                            <div class="swiper project-details-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="project-details-img">
-                                            <img src="assets/images/projects-details/project-detials-swiper-img-1.jpg" alt="swiper-img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="project-details-img">
-                                            <img src="assets/images/projects-details/project-detials-swiper-img-2.png" alt="swiper-img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="project-details-img">
-                                            <img src="assets/images/projects-details/project-detials-swiper-img-1.jpg" alt="swiper-img">
-                                        </div>
-                                    </div>
+                            {{-- Project Gallery --}} 
+                            @if($project->gallery && count(json_decode($project->gallery)) > 0) 
+                            <div class="project-details-swiper-wrapper mt-5"> 
+                                <div class="swiper project-details-swiper"> 
+                                    <div class="swiper-wrapper"> 
+                                        @foreach(json_decode($project->gallery) as $gallery) 
+                                        <div class="swiper-slide"> 
+                                            <div class="project-details-img"> 
+                                                <img src="{{ asset('uploads/projects/gallery/'.$gallery) }}" alt="gallery"> 
+                                            </div> 
+                                        </div> 
+                                        @endforeach 
+                                    </div> 
                                 </div>
                             </div>
+                        
                             <div class="project-details-swiper-btn">
                                 <div class="project-swiper-button-prev"><span><i
                                             class="fa-solid fa-arrow-left"></i></span>Previous</div>
                                 <div class="project-swiper-button-next">Next <span><i
                                             class="fa-solid fa-arrow-right"></i></span></div>
                             </div>
+
+                            @endif
                         </div>
                     </div>
                     <!-- Tpm Get In touch start -->
@@ -157,12 +147,42 @@
                             <h3 class="title">Project Details</h3>
                         </div>
                         <div class="body">
-                            <div class="project-details-info">Name: <span>Hosting vps</span></div>
-                            <div class="project-details-info">Author: <span>Nadimul Islam</span></div>
-                            <div class="project-details-info">Date: <span>23 January,2024</span></div>
+                            <div class="project-details-info">Name: <span>{{ $project->category->name ?? '' }}</span></div>
+                            <div class="project-details-info">Author: <span>{{ $project->client_name ?? 'Admin' }}</span></div>
+                            <div class="project-details-info">Date: <span>{{ $project->created_at->format('d F, Y') }}</span></div>
+                            @if($project->project_url) 
+                            <div class="project-details-info"> Project URL: 
+                                <span><a href="{{ $project->project_url }}" target="_blank" class="text-primary">{{ $project->project_url }} </a></span> 
+                            </div> 
+                            @endif
+                            @if($project->tags) 
+                            <div class="project-details-info"> Tags: <span>{{ $project->tags }}</span> </div> 
+                            @endif
                             <div class="project-details-info">Tags: <span>Host Web Design</span></div>
                         </div>
                     </div>
+
+
+                    {{-- Related Projects --}} 
+                    @if($relatedProjects->count() > 0) 
+                    <div class="signle-side-bar recent-post-area tmponhover mt-4"> 
+                        <div class="header"> 
+                            <h3 class="title"> Related Projects </h3> 
+                        </div> 
+                        <div class="body"> 
+                            @foreach($relatedProjects as $related) 
+                            <a href="{{ route('project.details', $related->slug) }}" class="single-post mb-3"> 
+                                <span class="single-post-left"> 
+                                    <span class="single-post-card-img"> 
+                                        <img src="{{ asset('uploads/projects/'.$related->image) }}" width="60" style="border-radius:8px;" alt="{{ $related->title }}"> 
+                                    </span> 
+                                    <span class="post-title ms-2"> {{ $related->title }} </span> 
+                                </span> 
+                            </a> 
+                            @endforeach 
+                        </div> 
+                    </div> 
+                    @endif
                 </div>
             </div>
         </div>

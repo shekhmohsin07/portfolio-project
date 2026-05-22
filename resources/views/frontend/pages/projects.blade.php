@@ -56,11 +56,23 @@
                                     </div>
                                     <div class="portfolio-card-content-wrap">
                                         <div class="content-left">
-                                            <h3 class="portfolio-card-title"><a href="{{ route('project.details', $project->slug) }}">{{ $project->title }}</a>
+                                            <h3 class="portfolio-card-title" style="margin-top: -50px;"><a href="{{ route('project.details', $project->slug) }}">{{ $project->title }}</a>
                                             </h3>
                                             <div class="tag-items">
                                                 <ul>
                                                     <li>
+                                                        <a href="#" class="tag-item">{{ $project->category->name ?? '' }}</a>
+                                                    </li>
+                                                     <li>
+                                                        <a href="#" class="tag-item">{{ $project->category->name ?? '' }}</a>
+                                                    </li>
+                                                     <li>
+                                                        <a href="#" class="tag-item">{{ $project->category->name ?? '' }}</a>
+                                                    </li>
+                                                     <li>
+                                                        <a href="#" class="tag-item">{{ $project->category->name ?? '' }}</a>
+                                                    </li>
+                                                     <li>
                                                         <a href="#" class="tag-item">{{ $project->category->name ?? '' }}</a>
                                                     </li>
                                         

@@ -59,7 +59,7 @@ class ProjectController extends Controller
 
             'title' => $request->title,
 
-            'slug' => Str::slug($request->title).'-'.time(),
+            'slug' => Str::slug($request->title),
 
             'image' => $imageName,
 
@@ -131,7 +131,7 @@ class ProjectController extends Controller
 
             'title' => $request->title,
 
-            'slug' => Str::slug($request->title).'-'.time(),
+            'slug' => Str::slug($request->title),
 
             'image' => $imageName,
 
