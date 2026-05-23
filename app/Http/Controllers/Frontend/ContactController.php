@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Contact;
-use App\Mail\ContactFormMail;
+use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -22,23 +22,35 @@ class ContactController extends Controller
             'email' => 'required|email', 
             'subject' => 'nullable|max:255', 
             'message' => 'required', 
-        ]);
-
-
-        // Contact::create([ 
-        //     'name' => $request->name, 
-        //     'phone' => $request->phone, 
-        //     'email' => $request->email, 
-        //     'subject' => $request->subject, 
-        //     'message' => $request->message, 
-        // ]);
+        ]); 
         
-        $data = $request->all();
-        Mail::to('shekhmohammadmohsin@gmail.com')->send(new ContactFormMail($data));
+        try { 
+            Contact::create([ 
+                'name' => $request->name, 
+                'phone' => $request->phone, 
+                'email' => $request->email, 
+                'subject' => $request->subject, 
+                'message' => $request->message, 
+            ]); 
+            
+            $data = [ 
+                'name' => $request->name, 
+                'phone' => $request->phone, 
+                'email' => $request->email, 
+                'subject' => $request->subject, 
+                'message' => $request->message, 
+            ]; 
+            
+            Mail::to('shekhmohammadmohsin@gmail.com') ->send(new ContactMail($data)); 
+            
+            return redirect(url()->previous() . '#contact-section')->with('success', 'Message sent successfully');
 
-        return back()->with('success', 'Message sent successfully'); 
-    } 
-
+        } 
+        
+        catch (\Exception $e) { 
+            return redirect(url()->previous() . '#contact-section')->with('error', $e->getMessage());
+        } 
+    }
 
     public function show($id) { 
         $contact = Contact::findOrFail($id); 

@@ -15,8 +15,6 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ProjectCategoryController;
 use App\Http\Controllers\Frontend\ContactController;
 
-use Illuminate\Support\Facades\Mail;
-
 
 
 
@@ -32,17 +30,6 @@ Route::get('/project/{project:slug}', [PagesController::class, 'projectDetails']
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store']) ->name('contact.store');
 
-
-Route::get('/test-mail', function () {
-
-    Mail::raw('Test email from Laravel SMTP', function ($message) {
-        $message->to('shekhmohammadmohsin@gmail.com')
-                ->subject('SMTP Test');
-    });
-
-    return 'Mail Sent Successfully';
-
-});
 
 
 

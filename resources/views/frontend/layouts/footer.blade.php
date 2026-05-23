@@ -1,5 +1,4 @@
     <!-- Start Footer Area  -->
-    <!-- Start Footer Area  -->
     <footer class="footer-area footer-style-one-wrapper bg-color-footer bg_images tmp-section-gap">
         <div class="container">
             <div class="footer-main footer-style-one">
@@ -80,5 +79,4 @@
             </div>
         </div>
     </div>
-    <!-- End Footer Area  -->
     <!-- End Footer Area  -->
