@@ -80,7 +80,7 @@
                                     <!-- Start Single Progress Charts -->
                                     <div class="progress-charts">
                                         <h6 class="heading heading-h6">
-                                            PHOTOSHOT</h6>
+                                            HTML</h6>
                                         <div class="progress">
                                             <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                                 <span class="percent-label">100%</span>
@@ -92,7 +92,7 @@
                                     <!-- Start Single Progress Charts -->
                                     <div class="progress-charts">
                                         <h6 class="heading heading-h6">
-                                            FIGMA</h6>
+                                            CSS</h6>
                                         <div class="progress">
                                             <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                                 <span class="percent-label">95%</span>
@@ -104,10 +104,10 @@
                                     <!-- Start Single Progress Charts -->
                                     <div class="progress-charts">
                                         <h6 class="heading heading-h6">
-                                            ADOBE XD</h6>
+                                            BOOTSTRAP</h6>
                                         <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="percent-label">60%</span>
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 95%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="percent-label">95%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -116,10 +116,10 @@
                                     <!-- Start Single Progress Charts -->
                                     <div class="progress-charts">
                                         <h6 class="heading heading-h6">
-                                            ADOBE ILLUSTRATOR</h6>
+                                            JAVASCRIPT</h6>
                                         <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="percent-label">70%</span>
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="percent-label">90%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -137,7 +137,7 @@
                                     <!-- Start Single Progress Charts -->
                                     <div class="progress-charts">
                                         <h6 class="heading heading-h6">
-                                            PHOTOSHOT</h6>
+                                            WORDPRESS</h6>
                                         <div class="progress">
                                             <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                                 <span class="percent-label">100%</span>
@@ -149,7 +149,7 @@
                                     <!-- Start Single Progress Charts -->
                                     <div class="progress-charts">
                                         <h6 class="heading heading-h6">
-                                            FIGMA</h6>
+                                            PHP</h6>
                                         <div class="progress">
                                             <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                                 <span class="percent-label">95%</span>
@@ -161,10 +161,10 @@
                                     <!-- Start Single Progress Charts -->
                                     <div class="progress-charts">
                                         <h6 class="heading heading-h6">
-                                            ADOBE XD</h6>
+                                            LARAVEL</h6>
                                         <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="percent-label">60%</span>
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="percent-label">100%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -173,10 +173,10 @@
                                     <!-- Start Single Progress Charts -->
                                     <div class="progress-charts">
                                         <h6 class="heading heading-h6">
-                                            ADOBE ILLUSTRATOR</h6>
+                                            REST API</h6>
                                         <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="percent-label">70%</span>
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="percent-label">90%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -200,7 +200,7 @@
                     <div class="year-of-expariance-wrapper bg-blur-style-one tmp-scroll-trigger tmp-fade-in animation-order-1">
                         <div class="year-expariance-wrap">
                             <!-- <h2 class="year-number"><span class="counter">25 </span> </h2> -->
-                            <h2 class="counter year-number"><span class="odometer" data-count="25">00</span>
+                            <h2 class="counter year-number"><span class="odometer" data-count="5">00</span>
                             </h2>
                             <h3 class="year-title">Years Of <br> experience</h3>
                         </div>
@@ -213,30 +213,30 @@
                         <div class="row g-5">
                             <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <h3 class="counter counter-title"><span class="odometer" data-count="20">00</span>k+
+                                    <h3 class="counter counter-title"><span class="odometer" data-count="50">00</span>+
                                     </h3>
-                                    <p class="counter-para">Our Project Complete</p>
+                                    <p class="counter-para">Project Complete</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                    <h3 class="counter counter-title"><span class="odometer" data-count="10">00</span>k+
+                                    <h3 class="counter counter-title"><span class="odometer" data-count="5">00</span>+
                                     </h3>
-                                    <p class="counter-para">Our Natural Products</p>
+                                    <p class="counter-para">Natural Products</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                    <h3 class="counter counter-title"><span class="odometer" data-count="200">00</span>+
+                                    <h3 class="counter counter-title"><span class="odometer" data-count="30">00</span>+
                                     </h3>
                                     <p class="counter-para">Clients Reviews</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                    <h3 class="counter counter-title"><span class="odometer" data-count="1000">00</span>+
+                                    <h3 class="counter counter-title"><span class="odometer" data-count="40">00</span>+
                                     </h3>
-                                    <p class="counter-para">our Satisfied Clientd</p>
+                                    <p class="counter-para">Satisfied Clientd</p>
                                 </div>
                             </div>
                         </div>
@@ -250,71 +250,87 @@
     <!-- Tpm Education Experience Area Start -->
     <section class="education-experience tmp-section-gapBottom">
         <div class="container">
-            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Education <span><img src="{{ asset('frontend-assets/images/custom-line/custom-line.png') }}"
-                        alt="custom-line"></span>
+            <div class="section-head mb--50">
+                <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    <span class="subtitle">Experience</span>
+                </div>
+                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Empowering Creativity
+                    <br> through
+                </h2>
+                <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">Business consulting
+                    consultants provide expert advice and guida
+                    businesses to help them improve their performance, efficiency, and organizational</p>
+            </div>
+            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">EXPERIENCE <span><img
+                        src="{{ asset('frontend-assets/images/custom-line/custom-line.png') }}" alt="custom-line"></span>
             </h2>
             <div class="row g-5">
                 <div class="col-lg-6 col-sm-6">
                     <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                        <h4 class="edu-sub-title">Trainer Marketing</h4>
-                        <h2 class="edu-title">2005-2009</h2>
-                        <p class="edu-para">A personal portfolio is a curated collection of an individual's professional
-                            work, showcasing their skills, experience A personal portfolio.</p>
+                        <h4 class="edu-sub-title">Full Stack Web Developer</h4>
+                        <h2 class="edu-title">2022-Current</h2>
+                        <p class="edu-para">
+                            Working as a freelance Full Stack Web Developer on Fiverr, helping clients build modern, responsive, and user-friendly websites using Laravel, WordPress, and modern web technologies.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                        <h4 class="edu-sub-title">Assistant Director</h4>
-                        <h2 class="edu-title">2010-2014</h2>
-                        <p class="edu-para">Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs.</p>
+                        <h4 class="edu-sub-title">Full Stack Web Developer</h4>
+                        <h2 class="edu-title">2023-2024</h2>
+                        <p class="edu-para">
+                            Working at DUMATA Technology as a Web Developer, developing responsive websites, web applications, and custom solutions using modern technologies and frameworks.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                        <h4 class="edu-sub-title">Design Assistant</h4>
-                        <h2 class="edu-title">2008-2012</h2>
-                        <p class="edu-para">I’ve had the privilege of working with various clients, from startups to established companies, helping bring their visions to life.</p>
+                        <h4 class="edu-sub-title">Website Designer</h4>
+                        <h2 class="edu-title">2021-2022</h2>
+                        <p class="edu-para">
+                            Worked as a Web Designer at TechExpo IT, designing modern, responsive, and user-friendly website layouts with clean UI/UX design.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                        <h4 class="edu-sub-title">Design Assistant</h4>
-                        <h2 class="edu-title">2008-2012</h2>
-                        <p class="edu-para">Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs a personal.</p>
+                        <h4 class="edu-sub-title">Wordpress Developer</h4>
+                        <h2 class="edu-title">2020-2021</h2>
+                        <p class="edu-para">
+                            Worked as a WordPress Developer at Fara IT Limited, building responsive business websites, customizing themes, and developing user-friendly web solutions.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="experiences-wrapper v2">
+            {{-- <div class="experiences-wrapper">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="experiences-wrap-right-content">
-                            <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ asset('frontend-assets/images/experiences/expert-img-two.jpg') }}" alt="expert-img">
+                        <div class="experiences-wrap-left-content">
+                            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Experiences <span><img
+                            src="{{ asset('frontend-assets/images/custom-line/custom-line.png') }}" alt="custom-line"></span></h2>
+
+                            <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                <p class="ex-subtitle">experience</p>
+                                <h2 class="ex-name">Soft Tech (2 Years)</h2>
+                                <h3 class="ex-title">UI/UX Designer</h3>
+                                <p class="ex-para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    desi dolore eu fugiat nulla pariatu Duis aute irure.</p>
+                            </div>
+                            <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                <p class="ex-subtitle">experience</p>
+                                <h2 class="ex-name">ModernTech (3 Years)</h2>
+                                <h3 class="ex-title">App Developer</h3>
+                                <p class="ex-para">In this portfolio, you’ll find a curated selection of projects that highlight my skills in [Main Areas, e.g., responsive web design.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="experiences-wrap-left-content">
-
-                            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Experiences <span><img
-                            src="{{ asset('frontend-assets/images/custom-line/custom-line.png') }}" alt="custom-line"></span></h2>
-                            <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                <p class="ex-subtitle">experience</p>
-                                <h2 class="ex-name">Fatima Asrafy</h2>
-                                <h3 class="ex-title">UI/UX Designer</h3>
-                                <p class="ex-para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                    desi dolore eu fugiat nulla pariatu Duis aute irure</p>
-                            </div>
-
-                            <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                <p class="ex-subtitle">experience</p>
-                                <h2 class="ex-name">Fatima Asrafy</h2>
-                                <h3 class="ex-title">UI/UX Designer</h3>
-                                <p class="ex-para">Interested in working together? Let’s bring your ideas to life! Contact me, and let’s start building something.</p>
-                            </div>
-
+                        <div class="experiences-wrap-right-content">
+                            <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ asset('frontend-assets/images/experiences/expert-img.jpg') }}" alt="expert-img">
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
     <!-- Tpm Education Experience Area End -->
@@ -504,46 +520,69 @@
                         <div class="col-lg-7">
                             <div class="contact-inner">
                                 <div class="contact-form">
-                                    <div id="form-messages" class="error"></div>
-                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="#">
+                                
+                                    @if(session('success'))
+                                        <div class="alert alert-success">
+                                            {{ session('success') }}
+                                        </div>
+                                    @endif
+
+                                    @if(session('error'))
+                                        <div class="alert alert-danger">
+                                            {{ session('error') }}
+                                        </div>
+                                    @endif
+
+                                    @if($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul class="mb-0">
+                                                @foreach($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+
+                                    <form method="POST" action="{{ route('contact.store') }}">
+                                        @csrf
                                         <div class="contact-form-wrapper row">
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="input-field" name="name" id="contact-name" placeholder="Your Name" type="text" required>
+                                                    <input class="input-field" name="name" placeholder="Your Name" type="text" value="{{ old('name') }}" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="input-field" id="contact-phone" placeholder="Phone Number" type="tel" required>
+                                                    <input class="input-field" name="phone" placeholder="Phone Number" type="tel" value="{{ old('phone') }}" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="input-field" id="contact-email" name="email" placeholder="Your Email" type="email" required>
+                                                    <input class="input-field" name="email" placeholder="Your Email" type="email" value="{{ old('email') }}" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="input-field" type="text" id="subject" name="subject" placeholder="Subject">
+                                                    <input class="input-field" type="text" name="subject" placeholder="Subject" value="{{ old('subject') }}">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <textarea class="input-field" placeholder="Your Message" name="message" id="contact-message" required></textarea>
+                                                    <textarea class="input-field" placeholder="Your Message" name="message" required> {{ old('message') }} </textarea>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-12">
                                                 <div class="tmp-button-here">
-                                                    <button class="tmp-btn hover-icon-reverse radius-round w-100" name="submit" type="submit" id="submit">
+                                                    <button class="tmp-btn hover-icon-reverse radius-round w-100" name="submit" type="submit">
                                                         <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Appointment Now</span>
-                                                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                            <span class="btn-text">Appointment Now</span>
+                                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                                         </span>
                                                     </button>
                                                 </div>
