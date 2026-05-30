@@ -29,35 +29,35 @@
                         <div class="service-card-icon">
                             <i class="fa-light fa-pen-ruler"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Web Design</a></h4>
-                        <p class="service-para">120 Projects</p>
+                        <h4 class="service-title"><a href="#">Web Design</a></h4>
+                        <p class="service-para">30+ Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-link-animation">
                         <div class="service-card-icon">
-                            <i class="fa-light fa-bezier-curve"></i>
+                            <i class="fab fa-wordpress"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Ui/Ux Design</a></h4>
-                        <p class="service-para">241 Projects</p>
+                        <h4 class="service-title"><a href="#">Wordpress Website</a></h4>
+                        <p class="service-para">25+ Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
                         <div class="service-card-icon">
-                            <i class="fa-light fa-lightbulb"></i>
+                            <i class="fab fa-laravel"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Web Research</a></h4>
-                        <p class="service-para">240 Projects</p>
+                        <h4 class="service-title"><a href="#">PHP/Laravel Website</a></h4>
+                        <p class="service-para">20+ Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-link-animation">
                         <div class="service-card-icon">
-                            <i class="fa-light fa-envelope"></i>
+                            <i class="fas fa-store"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Marketing</a></h4>
-                        <p class="service-para">331 Prodect</p>
+                        <h4 class="service-title"><a href="#">Code Canyon Customize</a></h4>
+                        <p class="service-para">5+ Projects</p>
                     </div>
                 </div>
             </div>
@@ -336,7 +336,7 @@
     <!-- Tpm Education Experience Area End -->
 
 
-    <section class="our-price-plan-area tmp-section-gapBottom">
+    {{-- <section class="our-price-plan-area tmp-section-gapBottom">
         <div class="container">
             <div class="section-head mb--60">
                 <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -497,7 +497,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Tpm Get In touch start -->
     <section class="get-in-touch-area tmp-section-gapBottom">

@@ -41,7 +41,7 @@
     <!-- Latest Service Area End -->
 
     <!-- Tpm My Price plan Start -->
-    <section class="our-price-plan-area tmp-section-gapBottom">
+    {{-- <section class="our-price-plan-area tmp-section-gapBottom">
         <div class="container">
             <div class="section-head mb--60">
                 <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Tpm My Price plan End -->
 
 

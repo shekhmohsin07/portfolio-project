@@ -62,7 +62,7 @@
                         <div class="service-card-icon">
                             <i class="fa-light fa-pen-ruler"></i>
                         </div>
-                        <h4 class="service-title"><a href="service-details.html">Website Design</a></h4>
+                        <h4 class="service-title"><a href="#">Website Design</a></h4>
                         <p class="service-para">30+ Projects</p>
                     </div>
                 </div>
