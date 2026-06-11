@@ -10,7 +10,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="banner-right-content">
-                            <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ asset('frontend-assets/images/banner/banner-user-image-one.png') }}" alt="banner-img">
+                            <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ asset('frontend-assets/images/banner/banner-user-image-one.webp') }}" alt="banner-img" width="500"
+     height="600" fetchpriority="high" decoding="async">
                             <h2 class="banner-big-text-1 up-down">WEB DESIGNER</h2>
                             <h2 class="banner-big-text-2 up-down-2">WEB DEVELOPER</h2>
                         </div>
@@ -406,7 +407,7 @@
     <!-- Tpm Education Experience Area End -->
 
     <!-- Tpm Our Supported Company Area Start -->
-    <div class="our-supported-company-area tmp-section-gapTop">
+    {{-- <div class="our-supported-company-area tmp-section-gapTop">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
@@ -451,7 +452,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Tpm Our Supported Company Area End -->
 
     <!-- Tpm Latest Portfolio Area Start -->

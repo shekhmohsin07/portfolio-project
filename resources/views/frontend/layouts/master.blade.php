@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="{{ asset('frontend-assets/css/plugins/odometer.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend-assets/css/vendor/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend-assets/css/vendor/bootstrap.min.css') }}">
+
+    <link rel="preload"
+      as="image"
+      href="{{ asset('frontend-assets/images/banner/banner-user-image-one.webp') }}">
+    <link rel="preload" href="your-font.woff2" as="font" type="font/woff2" crossorigin>
     <!-- custom css -->
     <link rel="stylesheet" href="{{ asset('frontend-assets/css/style.css') }}">
 </head>
